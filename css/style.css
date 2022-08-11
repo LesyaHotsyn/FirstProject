@@ -14,7 +14,6 @@ body{
 
 .flex{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
 }
@@ -56,7 +55,7 @@ body{
     position: absolute;
     content: '';
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color:#4c03c2;
     bottom: 0;
 }
@@ -88,4 +87,25 @@ body{
     cursor: pointer;
     transition: 1ms;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #4c03c2;
+}
+
+.text{
+    background: #F4F5F7;
+    font-weight:400;
+    font-size: 22px;
+    line-height: 32px;
+    padding: 77px 0 76px;
+}
+
+h2{
+    font-weight: 700;
+}
+
+.text-one{
+    margin-right: 30px;
+    flex: 1;
+}
+
+.text-two{
+    flex: 1;
 }
