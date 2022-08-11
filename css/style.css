@@ -110,50 +110,8 @@ body{
     flex: 1;
 }
 
-.margin_top{
-    margin-top: 30px;
-}
-
-.grid{
-    margin: 20px auto;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 150px);
-}
-
-.item{
-    background-color: violet;
-}
-
-.item:nth-child(1), .item:nth-child(10){
-    grid-column: span 3;
-}
-
-.item:nth-child(1), .item:nth-child(5){
-    grid-row:span 2;
-}
-
-.item:nth-child(2), .item:nth-child(3), .item:nth-child(7){
-    grid-column: span 2;
-    background-color: aqua;
-}
-
-.item:nth-child(4){
-    grid-column: span 5;
-    background-color: red;
-}
-
-.item:nth-child(6), .item:nth-child(8), .item:nth-child(9){
-    background-color: blue;
-}
-
-.item:nth-child(5){
-    background-color: aqua; ;
-}
-
-.item:nth-child(10){
-    background-color: greenyellow
+.margins_{
+    margin: 30px auto;
 }
 
 .grids{
@@ -186,11 +144,7 @@ body{
 }
 
 .logo-visitors{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
+    padding: 20px 0;
 }
 
 .img_visitors:hover{
