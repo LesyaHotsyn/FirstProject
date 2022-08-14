@@ -311,12 +311,6 @@ body{
     line-height: 26px;
 }
 
-.subscriptions_text-blue{
-    color: rgba(48, 64, 196, 1);
-    font-weight: 700;
-    text-decoration: underline;
-}
-
 .container-margin{
     margin: 123px auto 110px;
 }
