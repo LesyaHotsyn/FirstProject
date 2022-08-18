@@ -373,6 +373,10 @@ body{
         max-width: 750px;
     }
 
+    img{
+        max-width: 100%;
+    }
+
     .logo_text{
         display: none;
     }
@@ -453,9 +457,8 @@ body{
         gap: 29px 40px;
     }
 
-    .grids-image{
-        width: minmax(333px);
-        height: minmax(440px);
+    .grids-image>img{
+            max-width: 100%;
     }
 
     .grids-image:nth-child(2){
@@ -604,9 +607,7 @@ body{
         gap: 17px;
     }
 
-    .grids-image{
-        max-width: 100%;
-    }
+
 
     .grids-image:nth-child(2){
         display: none;
