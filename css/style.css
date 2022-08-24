@@ -111,7 +111,18 @@ body{
 
 .header_after{
     background-color: #F3C6BD;
-    padding: 57px 0 58px;
+    padding: 57px 0 126px;
+    position: relative;
+}
+
+.header_after-container > div:first-of-type{
+    z-index: 1;
+}
+
+.header_after-container > div:last-of-type{
+    position: absolute;
+    z-index: 0;
+    right: 125px;
 }
 
 .check{
@@ -386,6 +397,10 @@ body{
     padding-left: 15px;
 }
 
+.pl121{
+    padding-left: 121px;
+}
+
 .lisa_img{
     width: 100%;
     height: 100%;
@@ -396,6 +411,14 @@ body{
     line-height: 22px;
     color: rgba(43, 41, 45, 0.6);
     margin-top: 10px;
+}
+
+.lisa_title{
+    font-size: 48px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    color: #2B292D;
+    font-weight: 700;
 }
 
 .lisa_mt26{
@@ -439,9 +462,14 @@ body{
     padding: 48px 0 37px;
 }
 
+.header_after-button{
+    color: #3040C4;
+    font-weight: 700;
+}
+
 .header_text-maxw{
     max-width: 456px;
-    margin: 34px 0 58px;
+    margin: 34px 0 54px;
 }
 
 .animation_img{
@@ -536,6 +564,11 @@ body{
         position: relative;
     }
 
+
+    .check{
+        transition: 400ms;
+    }
+
     .checkbox{
         position: absolute;
         width: 30px;
@@ -544,6 +577,11 @@ body{
         top: 0;
         right: 0;
         opacity: 0;
+        z-index: 2;
+    }
+
+    .check-wrapper{
+        position: relative;
         z-index: 1;
     }
 
@@ -561,6 +599,14 @@ body{
 
     .checkbox:checked ~ .header_nav{
         display: block;
+        position: fixed;
+        background-color: beige;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 40px;
     }
 
     li{
@@ -570,12 +616,8 @@ body{
 
     .flex_menu{
         flex-direction: column;
-
     }
 
-    .check{
-        transition: 400ms;
-    }
     .flex__inbox-column{
         flex-direction: column-reverse;
     }
@@ -589,6 +631,34 @@ body{
     .text-one{
         margin: 0 0 30px;
     }
+
+    .header_after-container{
+        flex-direction: column;
+        /* text-align: left;
+        justify-self: start;
+        align-self: start; */
+        align-items: flex-start;
+    }
+
+    .header_after{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .header_after-container > div:last-of-type{
+        position: static;
+    }
+
+    .header_title{
+        font-size: 60px;    
+        line-height: 72px;
+        letter-spacing: -0.5px;
+        color: #2B292D;
+        font-weight: 700;
+        max-width: 525px;
+        margin-bottom: 15px;
+    }
+
 
     .inbox{
         padding: 56px 0 69px;
@@ -609,6 +679,15 @@ body{
         margin: 0 auto 41px;
         font-size: 20px;
         line-height: 26px;
+    }
+
+
+    .header_text-maxw{
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 355px;
+        padding: 0 0px 20px 0px;
+        margin: 0;
     }
 
     .inbox_respons{
@@ -708,6 +787,17 @@ body{
 
     .img_visitors{
         justify-self: center;
+    }
+
+    .input_email-text{
+        font-size: 22px;
+        line-height: 32px;
+        color: #2B292D;
+    }
+
+    .animation_img{
+        width: 90%;
+        left: 5%;
     }
 
     .footer{
@@ -813,6 +903,20 @@ body{
 @media screen and (max-width: 360px){
     .container{
         max-width: 300px;
+    }
+
+    .input_email{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .lisa{
+        padding-bottom: 20px;
+    }
+    
+    .flex-lisa{
+        flex-wrap: wrap;
+        /* margin-left: -13px; */
     }
 }
 
@@ -933,5 +1037,18 @@ body{
 
     .grids-image{
         max-width: 100%;
+    }
+
+    .header_text-maxw{
+        padding-bottom: 0;
+    }
+
+    .header_after-img{
+        margin: 33px auto;
+    }
+    .pl121{
+        max-width: 290px;
+        padding: 0;
+        margin: 40px 15px;
     }
 }
