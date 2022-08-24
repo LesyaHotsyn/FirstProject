@@ -379,6 +379,12 @@ body{
     line-height: 32px;
     margin-top: 12px;
 }
+.input_email::placeholder{
+    font-size: 18px;
+    line-height: 13px;
+    color: #2B292D;
+    padding-left: 15px;
+}
 
 .lisa_img{
     width: 100%;
@@ -394,6 +400,35 @@ body{
 
 .lisa_mt26{
     margin-top: 26px;
+}
+
+.lisa_checkbox{
+    opacity: 0;
+}
+
+.Lisa_fake{
+    width: 10px;
+    height: 10px;
+    /* border: 1px solid black; */
+    border-radius: 25%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.Lisa_fake::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(43, 41, 45, 0.6); ;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(50%, 50%);
+}
+
+.lisa_checkbox:checked ~ .Lisa_fake::before{
+    opacity: 1;
+    transform: 1s;
 }
 
 .info_mb0{
