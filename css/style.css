@@ -122,7 +122,7 @@ body{
 .header_after-container > div:last-of-type{
     position: absolute;
     z-index: 0;
-    right: 125px;
+    left: 43%;
 }
 
 .check{
@@ -158,6 +158,72 @@ body{
 
 .margins_{
     margin: 30px auto;
+}
+
+.about_after{
+    max-width: 555px;
+    margin: 106px auto 60px;
+    text-align: center;
+    /* text-align: center; */
+}
+
+.about_items{
+    max-width: 750px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    padding: 26px 25px;
+    border: 2px solid rgba(43, 41, 45, 0.2);
+    border-radius: 8px;
+}
+
+.about_title{
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.about_p{
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 555px;
+    margin: 20px auto 28px;
+}
+
+.about_pretitle{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.about_city{
+    font-size: 18px;
+    line-height: 24px;
+    /* text-align: end; */
+}
+
+.about_text{
+    margin-top: 3px;
+    max-width: 410px;
+    font-size: 18px;
+    line-height: 26px;
+    display: none;
+}
+
+.about_rotate-icon{
+    transform: rotate(90deg);
+    transition: 300ms;
+}
+
+.about_button{
+    width: 247px;
+}
+
+.change-color{
+    color: white;
+    background-color: #3141C5;
+    border: 2px solid #3141C5;
+    transition: 300ms;
 }
 
 .grids{
@@ -390,6 +456,7 @@ body{
     line-height: 32px;
     margin-top: 12px;
 }
+
 .input_email::placeholder{
     font-size: 18px;
     line-height: 13px;
@@ -557,9 +624,10 @@ body{
 }
 
 .line{
-    background: #2B292D;
+    background: rgba(43, 41, 45, 0.1);
     mix-blend-mode: normal;
-    height: 0.1;
+    height: 1px;
+    margin-bottom: 5px;
 }
 
 .header_after-button{
@@ -572,6 +640,37 @@ body{
     margin: 34px 0 54px;
 }
 
+.modal-overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+}
+
+.modal{
+    max-width: 550px;
+    text-align: center;
+    background-color: white;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
+
 .animation_img{
     position: relative;
     animation-name: img-Scale;
@@ -579,6 +678,7 @@ body{
     animation-iteration-count: 1;
     animation-direction: alternate;  
     transition-timing-function: ease-out;
+    width: 100%;
 }
 
 .animation_img:hover{
@@ -773,7 +873,6 @@ body{
         margin-bottom: 15px;
     }
 
-
     .inbox{
         padding: 56px 0 69px;
     }
@@ -815,6 +914,19 @@ body{
 
     .header_title-marg{
         margin-left: 15px;
+    }
+
+    .about_title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+    }
+
+    .about_p{
+        max-width: 390px;
+        font-size: 20px;
+        line-height: 26px;
     }
 
     .logo_grid{
@@ -1125,8 +1237,17 @@ body{
         width: 100%;
     }
 
+    .about_title{
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+    }
 
-
+    .about_p{
+        max-width: 290px;
+        font-size: 24px;
+        line-height: 34px;
+    }
 }
 
 @media screen and (max-width: 320px){
