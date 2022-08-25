@@ -462,6 +462,76 @@ body{
     padding: 48px 0 37px;
 }
 
+.flex_footer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer_logo{
+    margin-right: 10px;
+}
+
+.footer_text_p{
+    max-width: 330px;
+    margin: 25px auto;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.footer_title{
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer_ul{
+    align-items: flex-start;
+}
+
+.footer_li{
+    list-style-type: none;
+}
+
+.footer_link{
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+    text-decoration: none;
+    position: relative;
+}
+
+.footer_link:hover{
+    font-weight: 700;
+    color: #3040C4;
+}
+
+.footer_link:hover::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color:#4c03c2;
+    bottom: 0;
+}
+
+.footer_link:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:#4c03c2;
+    left: 0;
+}
+
+.footer_link-bottom{
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
 .header_after-button{
     color: #3040C4;
     font-weight: 700;
@@ -577,12 +647,12 @@ body{
         top: 0;
         right: 0;
         opacity: 0;
-        z-index: 2;
+        z-index: 4;
     }
 
     .check-wrapper{
         position: relative;
-        z-index: 1;
+        z-index: 3;
     }
 
     .checkbox:checked ~ .check-wrapper > .check:first-of-type{
@@ -607,11 +677,21 @@ body{
         right: 0;
         text-align: center;
         padding-top: 40px;
+        z-index: 2;
+    }
+ 
+    .header_ul{
+        text-align: center;
+        margin: 0 auto;
     }
 
-    li{
+    .header_li{
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .header_li:not(:last-of-type){
+        margin-right: 0;
     }
 
     .flex_menu{
@@ -691,7 +771,7 @@ body{
         line-height: 26px;
         max-width: 355px;
         padding: 0 0px 20px 0px;
-        margin: 0;
+        margin: 0 0 10px;
     }
 
     .inbox_respons{
