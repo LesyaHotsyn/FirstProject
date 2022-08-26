@@ -204,6 +204,26 @@ body{
     margin: 5px 0;
 }
 
+.flex-items{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.forFeatures{
+    /* position: relative; */
+}
+
+.forFeatures-preImg{
+    position: absolute;
+    /* left:  13%; */
+    /* bottom: -70%; */
+}
+
+.forFeatures-inscription{
+    margin-left: 15px;
+}
+
 .about_after{
     max-width: 555px;
     margin: 106px auto 60px;
@@ -1081,6 +1101,16 @@ body{
         justify-content: center;
     }
 
+    .forFeatures_p{
+        margin-bottom: 50px;
+    }
+
+    .forFeatures-preImg{
+        position: absolute;
+        left:  13%;
+        bottom: -70%;
+    }
+
     .lisa_img{
         padding-top: 13px;
     }
@@ -1157,6 +1187,9 @@ body{
         padding: 0;
         margin: 40px 15px;
     }
+
+    .forFeatures-preImg{
+display: none;
 
     .footer_text{
         margin-top: 32px;
