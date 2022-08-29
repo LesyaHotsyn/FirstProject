@@ -220,6 +220,10 @@ body{
     /* bottom: -70%; */
 }
 
+.forFeatures-img{
+    /* position: absolute; */
+}
+
 .forFeatures-inscription{
     margin-left: 15px;
 }
@@ -291,9 +295,7 @@ body{
 }
 
 .change-color-line{
-    background-color: #3142C6;
-    height: 3px;
-    transition: 300ms;
+    border: 2px solid #3141C5;
  }
 
 .grids{
