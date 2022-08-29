@@ -1,7 +1,7 @@
 $('.').bxSlider({
-    // mode: 'fade',
-    // controls: false,
-    // pager: true,
-    // randomStart: true
+    mode: 'fade',
+    controls: false,
+    pager: true,
+    randomStart: true
 });
 
