@@ -188,6 +188,7 @@ body{
     margin: 0 auto 10px;
     box-sizing: border-box;
     padding: 5px 5px;
+    border-bottom: 1px solid rgba(43, 41, 45, 0.15);;
 }
 
 .forFeatures_text{
@@ -197,12 +198,10 @@ body{
     display: none;
 }
 
-.forFeatures_line{
-    background: rgba(43, 41, 45, 0.15);
+/* .forFeatures_line{ */
+    /* background: rgba(43, 41, 45, 0.15);
     /* mix-blend-mode: normal; */
-    height: 1px;
-    margin: 5px 0;
-}
+/* } */
 
 .flex-items{
     display: flex;
@@ -226,6 +225,9 @@ body{
 
 .forFeatures-inscription{
     margin-left: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .about_after{
@@ -294,8 +296,14 @@ body{
     transition: 300ms;
 }
 
+.change-color-text{
+    color: #3141C5;
+    transition: 300ms;
+}
+
 .change-color-line{
-    border: 2px solid #3141C5;
+    border-bottom: 3px solid #3141C5;
+    transition: 300ms;
  }
 
 .grids{
