@@ -17,5 +17,9 @@ $('#about_link').on('click',function(e){
 
 $('#inbox_link').on('click',function(e){
     e.preventDefault();
-    $('html,body').animate({scrollTop: $('#inbox').offset().top}, 1000)
+    $('html,body').animate({
+        scrollTop: $('#inbox').offset().top
+    }, 1000)
 })
+
+document.getElementById('checkbox-menu').checked = false;

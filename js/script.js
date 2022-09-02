@@ -8,6 +8,7 @@ $('.forFeatures_items > div').on('click', function(){
         $(this).next('.forFeatures_text').slideToggle(300);
         $(this).parent('.forFeatures_items').toggleClass('change-color-line');
         $(this).children('.forFeatures-inscription').toggleClass('change-color-text')
+        $(this).children('.forFeatures_items-icon').toggleClass('forFeatures_items-icon--blue')
 }) 
 
 
