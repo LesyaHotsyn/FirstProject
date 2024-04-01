@@ -1,135 +1,133 @@
-.bx-wrapper{
-    border: none;
-    box-shadow: none;
-    text-align: center;
-    max-width: 1140px;
-    margin: 0 auto 50px;
+.bx-wrapper {
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  max-width: 1140px;
+  margin: 0 auto 50px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-    width: 15px;
-    height: 15px;
-    background-color: black;
-    border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:hover, 
-.bx-wrapper .bx-pager.bx-default-pager a:focus{
-    background-color: #3142C6;
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background-color: #3142c6;
 }
 
 /* .carousal{
 
 } */
 
-.carousal_title{
-    font-size: 24px;
-    line-height: 30px;
-    color: #3142C6;
-    font-weight: 700;
-    max-width: 1140x;
+.carousal_title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #3142c6;
+  font-weight: 700;
+  max-width: 1140x;
 }
 
-.carousal_text{
-    max-width: 750px;
-    font-size: 24px;
-    line-height: 34px;
-    margin: 0 auto;
+.carousal_text {
+  max-width: 750px;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 auto;
 }
 
-.carousal_prof{
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(43, 41, 45, 0.6)
-    margin: 0 auto;
+.carousal_prof {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(43, 41, 45, 0.6);
+  margin: 0 auto;
 }
 
-.carousal_name{
-    font-weight: 700;
-    color: #2B292D;
+.carousal_name {
+  font-weight: 700;
+  color: #2b292d;
 }
 
-.carousal_img{
-    position: absolute;
-    right: 10%;
+.carousal_img {
+  position: absolute;
+  right: 10%;
 }
 
 @media screen and (max-width: 1200px) {
-    
-    .carousal_img{
-        right: 5%;
-    }
+  .carousal_img {
+    right: 5%;
+  }
 
-    .carousal_prof{
-        margin: 0 auto;
-    }
+  .carousal_prof {
+    margin: 0 auto;
+  }
 
-    .bx-viewport{
-        min-height: 180px;
-        height: 383px;
-    }
+  .bx-viewport {
+    min-height: 180px;
+    height: 383px;
+  }
 }
 
-@media screen and (max-width: 1090px){
+@media screen and (max-width: 1090px) {
+  .carousal {
+    text-align: center;
+    margin: 85px auto 50px;
+  }
 
-    .carousal{
-        text-align: center;
-        margin: 85px auto 50px;
-    }
+  .carousal_title {
+    max-width: 573px;
+    margin: 0 auto 15px;
+  }
 
-    .carousal_title{
-        max-width: 573px;
-        margin: 0 auto 15px;
-    }
+  .carousal_text {
+    max-width: 583px;
+  }
 
-    .carousal_text{
-        max-width: 583px;
-    }
+  .carousal_prof {
+    max-width: 175px;
+  }
 
-    .carousal_prof{
-        max-width: 175px;
-    }
+  .carousal_img {
+    position: static;
+    right: 0%;
+    margin-top: 50px;
+  }
 
-    .carousal_img{
-        position: static;
-        right: 0%;
-        margin-top: 50px;
-    }
-
-    .bx-viewport{
-        min-height: 383px;
-    }
+  .bx-viewport {
+    min-height: 383px;
+  }
 }
 
-@media screen and (max-width: 560px){
-    .bx-viewport{
-        min-height: 450px;
-        height: 450px;
-    }
+@media screen and (max-width: 560px) {
+  .bx-viewport {
+    min-height: 450px;
+    height: 450px;
+  }
 }
 
-@media screen and (max-width: 470px){
-    .bx-viewport{
-        min-height: 650px;
-        height: 650px;
-    }
+@media screen and (max-width: 470px) {
+  .bx-viewport {
+    min-height: 650px;
+    height: 650px;
+  }
 
-    .carousal{
-        text-align: left;
-        margin: 50px 0;
-    }
+  .carousal {
+    text-align: left;
+    margin: 50px 0;
+  }
 
-    .carousal_text{
-        margin: 30px 0;
-    }
+  .carousal_text {
+    margin: 30px 0;
+  }
 
-    .carousal_prof{
-        text-align: left;
-        margin: 0;
-    }
+  .carousal_prof {
+    text-align: left;
+    margin: 0;
+  }
 
-    .carousal_name{
-        margin-top: 10px;
-    }
+  .carousal_name {
+    margin-top: 10px;
+  }
 }
